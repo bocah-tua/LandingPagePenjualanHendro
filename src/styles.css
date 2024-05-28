@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+/* Css untuk navbar */
+.navbar {
+  background-color: red;
+}
+
+.text-brand {
+  margin-left: 8px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+.header-navbar {
+  box-shadow: 1px 5px 35px rgba(5, 5, 5, 0.24);
+  border-radius: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Css untuk carousel dan heroes */
+.container-fluid .navbar-brand {
+  margin-left: 3rem;
+}
+
+.carousel-section {
+  margin-top: 70px;
+}
+
+.collapse {
+  margin-right: 3rem;
+}
+
+.hero-image {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.carousel-item img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.carousel-section .row {
+  box-shadow: 0px 5px 15px rgba(5, 5, 5, 0.24);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/* Css untuk gallery */
+.gallery-section {
+  margin: 20px;
+}
+
+.gallery-section {
+  box-shadow: 0px 5px 30px rgba(5, 5, 5, 0.24);
+  border-radius: 10px;
+}
+
+.gallery-item {
+  margin-bottom: 15px;
+}
+.gallery-title {
+  margin-bottom: 10px;
+}
+.gallery-description {
+  color: #777;
+}
+
+.product-item {
+  box-shadow: 0px 5px 15px rgba(23, 22, 22, 0.136);
+  border-radius: 8px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.product-item img {
+  border-radius: 5px;
+  border-bottom: 3px solid rgba(137, 166, 109, 0.63);
+}
+
+.product-title {
+  margin-left: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.description-product {
+  margin-left: 5px;
+  font-size: 0.7rem;
+}
+
+.price {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Whatsapp button */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1000;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-button svg {
+  width: 100%;
+  height: 30px;
+  fill: #ffffff;
+}
+
+/* Footer */
+.footer-section h5 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.footer-section p {
+  font-size: 0.8rem;
+}
+
+/* Mobile */
+@media (min-width: 992px) {
+  .gallery-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .gallery-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .right {
+    margin-top: 8px;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+  }
+
+  .product-title {
+    margin-left: 5px;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  .description-product {
+    margin-left: 5px;
+    font-size: 0.5rem;
+  }
+
+  .price {
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+
+  .footer-section h5 {
+    font-size: 0.7rem;
+  }
+
+  .footer-section p {
+    font-size: 0.5rem;
+  }
+
+  .text-brand {
+    font-size: 1rem;
+  }
+
+  .header-navbar li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-menu .collapse {
+    display: block !important;
+  }
+
+  .footer-menu .accordion-toggle i {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordion-toggle i {
+    display: inline-block !important;
+  }
+
+  .footer-menu .collapse {
+    display: none;
+  }
+
+  .footer-menu .collapse.show {
+    display: block;
+  }
+}
